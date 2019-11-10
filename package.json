@@ -1,0 +1,29 @@
+{
+  "name": "ho_test",
+  "version": "1.0.0",
+  "description": "users status",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Efi Fital",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.6.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.8",
+    "request": "^2.88.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
+  }
+}
